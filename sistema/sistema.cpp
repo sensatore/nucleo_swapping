@@ -263,6 +263,7 @@ bool swap_out(Swap_Operation swap_type, natl prio = 0xFFFFFFFF);
  */
 extern "C" void schedulatore(void)
 {
+	// TESI
 	while (to_swap_in) {
 		if (check_frame_swap_in()) {
 			// sono presenti frame a sufficienza per effettuare uno swap-in
@@ -283,7 +284,7 @@ extern "C" void schedulatore(void)
 			break;
 		}
 	}
-
+	// TESI
 	esecuzione = rimozione_lista(pronti);
 }
 
